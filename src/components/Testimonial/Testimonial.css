@@ -1,0 +1,81 @@
+.testimonial {
+    padding: 40px;
+}
+
+.testimonial>h2 {
+    text-align: center;
+    color: #0cf1a6;
+}
+
+.testimonial>h1 {
+    text-align: center;
+    color: #293531;
+}
+
+.testimonial-students {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.student-card {
+    width: 350px;
+    color: #293531;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.student-card:hover {
+    background-color: #293531;
+    color: #0cf1a6;
+    transition: .3s;
+}
+
+.std-img-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.std-name {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.std-img-name>img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.std-text {
+    padding: 10px 15px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .testimonial-students {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .testimonial-students {
+        flex-wrap: wrap;
+    }
+
+    .student-card {
+        margin: 15px 0;
+    }
+
+    .std-name {
+        padding-left: 22px;
+    }
+
+    .std-text {
+        text-align: center;
+    }
+}

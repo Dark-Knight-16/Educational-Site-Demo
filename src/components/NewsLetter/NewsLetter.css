@@ -1,0 +1,38 @@
+.newsletter {
+    display: flex;
+    align-items: center;
+    padding: 70px 0;
+    justify-content: center;
+    background-color: #293531;
+}
+
+.newsletter>h2,
+.newsletter>input {
+    margin: 0 20px;
+    padding: 12px;
+}
+
+.newsletter>h2 {
+    color: #0cf1a6;
+}
+
+.newsletter>input {
+    width: 250px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #0cf1a6;
+}
+
+@media only screen and (max-width: 800px) {
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter>h2 {
+        text-align: center;
+    }
+
+    .newsletter>input {
+        width: 80%;
+    }
+}
